@@ -1,132 +1,248 @@
-@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Comic+Neue:wght@300&family=Doppio+One&family=Inter:wght@100;200;300;400;500;600;800&family=Lily+Script+One&family=Mukta:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Comic+Neue:wght@300&family=Doppio+One&family=Glory:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,100;1,200;1,300;1,400&family=Inter:wght@100;200;300;400;500;600;800&family=Lily+Script+One&family=Mukta:wght@300;400;500;600;700&display=swap');
+
 
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-}
-
-body {
-  background: #E0E5E1;
+  font-family: 'Glory', sans-serif;
+  list-style: none;
+  text-decoration: none;
 }
 
 header {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
-  background: linear-gradient(90deg, rgba(227, 233, 84, 0.6502976190476191) 12%, rgba(1, 14, 17, 1) 82%, rgba(2, 0, 36, 1) 94%, rgba(2, 0, 36, 1) 94%);
-  height: 10vh;
-  font-family: 'Chela One', cursive;
+  flex-direction: column;
+  height: 918px;
+  background: rgba(219, 193, 157, 0.45);
+  box-shadow: 12px 12px 8px 0px #D6A570;
+  width: 100%
 }
 
-.logo {
-  width: 100px;
-  object-fit: cover;
-  border-radius: 10px;
-
-}
-
-ul {
-  width: 40vw;
+header nav ul {
   display: flex;
-  justify-content: space-between;
-  list-style: none;
-}
-
-
-header a {
-  color: #FFF;
-  text-decoration: none;
-  font-size: 20px;
-}
-
-header a:hover {
-  text-shadow: 5px 4px 2px rgba(221, 228, 54, 0.81);
-  cursor: pointer;
-
-}
-
-.main {
-  display: flex;
-
-}
-
-.menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-.title {
-  text-align: center;
-  font-size: 50px;
-  font-family: 'Chela One', cursive;
-  margin-top: 50px;
-}
-
-.menuContainer {
-  display: flex;
-
-  margin-top: 90px;
-
-}
-
-.menuContainer figure {
   justify-content: space-around;
-  padding: 50px;
+  width: 539px;
+  margin-top: 66px;
+}
+
+header nav ul a {
+  color: #000;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 25px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+
 }
 
 .content {
   display: flex;
   flex-direction: column;
+  width: 500px;
+  margin: 299px 69px;
+}
+
+.content h1 {
+  color: #000;
+  text-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.025);
+  font-size: 70px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  text-align: center;
+}
+
+.content p {
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.btn {
+  display: flex;
+
+}
+
+#btn1 {
+  border: 1px solid #000;
+  background: #000;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 25px;
+  color: #F3EBDF;
+  text-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+  line-height: normal;
+}
+
+#btn2 {
+  border: 1px solid #000;
+  background: #F3EBDF;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #000;
+  text-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 25px;
+  font-weight: 600;
+  line-height: normal;
+  margin-left: 24px;
+
+}
+
+.btn a {
+  display: flex;
+  width: 295px;
+  height: 76px;
+  margin-top: 143px;
   justify-content: center;
   align-items: center;
 }
 
-.content button {
-  background-color: #d1d77d;
-  color: black;
-  text-transform: uppercase;
-  width: 50%;
-  height: 40px;
-  font-family: 'Doppio One', sans-serif;
+.coffee {
+  width: 755px;
+  height: 849px;
 }
 
-.content button:hover {
-  background-color: black;
-  color: #FFF;
+.cofImg {
+  width: 755px;
+  height: 849px;
+  flex-shrink: 0;
+
 }
 
-.menu img {
-  width: 250px;
-  height: 200px;
-  border-radius: 15px;
+.mainContainer {
+  background-image: url('./assets/bgMain.svg');
 }
 
-.menu img:hover {
-  transform: scale(150%);
-}
-
-.content figcaption {
-  font-weight: bold;
+.mainContainer h1 {
   text-align: center;
+  font-size: 60px;
+  color: #BE8E4B;
+  text-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  font-weight: 600;
+  margin-top: 103px;
 }
 
-footer {
+.drink {
   display: flex;
   justify-content: center;
-  height: 10vh;
   align-items: center;
 }
 
-footer p {
-  text-align: center;
-  font-family: 'Chela One', cursive;
-  font-size: 20px;
+.drink2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 150px;
+  margin-left: 50px;
+
+
+
 }
 
-footer img {
-  width: 50px;
-  border-radius: 50%;
-  padding-left: 20px;
+.drink2 img {
+  width: 327px;
+  height: 216.936px;
+  flex-shrink: 0;
+  box-shadow: 0px 10px 10px 5px #BE8E4B;
+
+
+}
+
+.drink2 a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  width: 208px;
+  height: 54.234px;
+  border: 1px solid rgba(125, 76, 51, 0.31);
+  background: #DBC19D;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  color: #7D4C33;
+  text-shadow: 3px 3px 4px 0px rgba(0, 0, 0, 0.25);
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.history{
+  margin-top: 150px;
+  margin-left: 78px;
+}
+
+.historyContainer{
+  display: flex;
+}
+
+.history h1{
+  font-size: 65px;
+  color: #000;
+  font-weight: 600;
+}
+
+.history p{
+  color: #000;
+font-size: 30px;
+margin-top: 35px;
+font-weight: 400;
+display: flex;
+width: 647px;
+height: 331px;
+
+
+}
+
+.right{
+  margin-right: 10px;
+}
+
+.sacpCafe{
+  
+  width: 859px;
+height: 516px;
+
+}
+
+
+.logo{
+  width: 395.404px;
+  height: 396.185px;
+  transform: rotate(9.261deg);
+  box-shadow: 12px 12px 4px 0px rgba(0, 0, 0, 0.25);
+  margin-left: 451px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+
+footer{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 80px;
+  background: rgba(190, 142, 75, 0.79);
+  filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+footer nav ul{
+  display: flex;
+}
+
+.social{
+  width: 28px;
+height: 33px;
+}
+
+footer p{
+  font-size: 17px;
+  color: #1E1E1E;
+text-shadow: 8px 8px 4px 0px rgba(0, 0, 0, 0.25);
+font-family: Doppio One;
 }
