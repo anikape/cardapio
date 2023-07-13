@@ -142,8 +142,6 @@ header nav ul a {
   margin-top: 150px;
   margin-left: 50px;
 
-
-
 }
 
 .drink2 img {
@@ -198,9 +196,6 @@ height: 331px;
 
 }
 
-.right{
-  margin-right: 10px;
-}
 
 .sacpCafe{
   
@@ -215,7 +210,7 @@ height: 516px;
   height: 396.185px;
   transform: rotate(9.261deg);
   box-shadow: 12px 12px 4px 0px rgba(0, 0, 0, 0.25);
-  margin-left: 451px;
+  margin-left: 350px;
   margin-top: 50px;
   margin-bottom: 50px;
 }
